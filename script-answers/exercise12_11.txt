@@ -1,0 +1,24 @@
+Script started on 2023-12-26 17:12:06+02:00 [TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="120" LINES="30"]
+[?2004h]0;sami@DESKTOP-16F6C78: ~/part12-containers-applications/script-answers[01;32msami@DESKTOP-16F6C78[00m:[01;34m~/part12-containers-applications/script-answers[00m$ exitdocker exec -it todo-backend-redis-1 bashexit[Kdocker exec -it todo-backend-redis-1 bash
+[?2004l[?2004hroot@be28b94941be:/data# redis-cli
+[?2004l127.0.0.1:6379> [0K127.0.0.1:6379> k[17C[0K127.0.0.1:6379> [16C[0K127.0.0.1:6379> K[17C[0K127.0.0.1:6379> KE[18C[0K127.0.0.1:6379> KEY[19C[0K127.0.0.1:6379> KEYS[20C[0K127.0.0.1:6379> KEYS [0;90;49mpattern[0m[21C[0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> KEYS *[22C
+(empty array)
+127.0.0.1:6379> [0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> KEYS *[22C
+1) "todo"
+127.0.0.1:6379> [0K127.0.0.1:6379> G[17C[0K127.0.0.1:6379> GE[18C[0K127.0.0.1:6379> GET[19C[0K127.0.0.1:6379> GET [0;90;49mkey[0m[20C[0K127.0.0.1:6379> GET t[0;90;49m key[0m[21C[0K127.0.0.1:6379> GET to[0;90;49m key[0m[22C[0K127.0.0.1:6379> GET tod[0;90;49m key[0m[23C[0K127.0.0.1:6379> GET todo[0;90;49m key[0m[24C[0K127.0.0.1:6379> GET todo[24C
+"1"
+127.0.0.1:6379> [0K127.0.0.1:6379> S[17C[0K127.0.0.1:6379> SE[18C[0K127.0.0.1:6379> SET[19C[0K127.0.0.1:6379> SET [0;90;49mkey value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-millisecon[0m[20C[0K127.0.0.1:6379> SET t[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-millisec[0m[21C[0K127.0.0.1:6379> SET to[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-millise[0m[22C[0K127.0.0.1:6379> SET tod[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-millis[0m[23C[0K127.0.0.1:6379> SET todo[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milli[0m[24C[0K127.0.0.1:6379> SET todo [0;90;49mvalue [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseco[0m[25C[0K127.0.0.1:6379> SET todo 9[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-millise[0m[26C[0K127.0.0.1:6379> SET todo 90[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-millis[0m[27C[0K127.0.0.1:6379> SET todo 900[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milli[0m[28C[0K127.0.0.1:6379> SET todo 9001[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-mill[0m[29C[0K127.0.0.1:6379> SET todo 9001[29C
+OK
+127.0.0.1:6379> [0K127.0.0.1:6379> SET todo 9001[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-mill[0m[29C[0K127.0.0.1:6379> GET todo[0;90;49m key[0m[24C[0K127.0.0.1:6379> GET todo[24C
+"9002"
+127.0.0.1:6379> [0K127.0.0.1:6379> D[17C[0K127.0.0.1:6379> DE[18C[0K127.0.0.1:6379> DEL[19C[0K127.0.0.1:6379> DEL [0;90;49mkey [key ...][0m[20C[0K127.0.0.1:6379> DEL t[0;90;49m key [key ...][0m[21C[0K127.0.0.1:6379> DEL to[0;90;49m key [key ...][0m[22C[0K127.0.0.1:6379> DEL too[0;90;49m key [key ...][0m[23C[0K127.0.0.1:6379> DEL to[0;90;49m key [key ...][0m[22C[0K127.0.0.1:6379> DEL tod[0;90;49m key [key ...][0m[23C[0K127.0.0.1:6379> DEL todo[0;90;49m key [key ...][0m[24C[0K127.0.0.1:6379> DEL todo[24C
+(integer) 1
+127.0.0.1:6379> [0K127.0.0.1:6379> DEL todo[0;90;49m key [key ...][0m[24C[0K127.0.0.1:6379> GET todo[0;90;49m key[0m[24C[0K127.0.0.1:6379> GET todo[24C
+"1"
+127.0.0.1:6379> 
+[?2004hroot@be28b94941be:/data# exit
+[?2004lexit
+[?2004h]0;sami@DESKTOP-16F6C78: ~/part12-containers-applications/script-answers[01;32msami@DESKTOP-16F6C78[00m:[01;34m~/part12-containers-applications/script-answers[00m$ exit
+[?2004lexit
+
+Script done on 2023-12-26 17:14:13+02:00 [COMMAND_EXIT_CODE="0"]
